@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image , Alert} from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image , Alert, StatusBar} from 'react-native';
 import Lesson from '../components/lesson';
 import Lesson2 from '../components/lesson2';
 import Lesson3 from '../components/lesson3';
@@ -39,6 +39,7 @@ const home=function ({navigation}){
 
 
     return <View>
+                <StatusBar hidden={true}></StatusBar>
                 {/*navigationBar start */}
                 <View style={style.styleView92}>
                     <TouchableOpacity style={{}} activeOpacity={0.8}  onPress={()=>{Alert.alert("Coming Soon..","Please support us by sharing the app to get new FREE content.")}}> 
@@ -82,8 +83,9 @@ const home=function ({navigation}){
                         <Lesson5/>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={{}} activeOpacity={0.8}  onPress={()=>{ }}> 
-                        <Lesson6/>
+                   
+                    <TouchableOpacity style={{}} activeOpacity={0.8}  onPress={()=>{Alert.alert("Coming Soon..","Please support us by sharing the app to get new FREE content.")}}> 
+                    <Lesson6/>
                     </TouchableOpacity>
                     
                     
